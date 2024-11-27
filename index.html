@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/25171692e9.js" crossorigin="anonymous"></script>
+    <title>Hacked</title>
+</head>
+<body>
+    <div class="main">
+        <div class="hacked">
+            <h1>You have been Hacked</h1>
+        </div>
+
+        <div class="icons">
+            <div class="mobile">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <div class="arrow">
+                <i class="fa-solid fa-right-long"></i>
+                <i class="fa-solid fa-right-long"></i>
+                <i class="fa-solid fa-right-long"></i>
+            </div>
+            <img src="images/1732686763884.png" alt="">
+            
+        </div>
+
+        <div class="transfaring">
+            <div class="logo">
+                <div class="spiner">
+                    <div id="img">
+                        <div class="icon">
+                            <i class="fa-solid fa-image" style="color: #74C0FC; font-size: 43px;" ></i>
+                        </div>
+
+                        <div class="icon" style="position: absolute; display: none;">
+                            <i class="fa-solid fa-user" style="color: #74C0FC; font-size: 43px;"></i>
+                        </div>
+
+                        <div class="icon" style="position: absolute; display: none">
+                            <i class="fa-solid fa-envelope" style="color: #74C0FC; font-size: 43px;" ></i>
+                        </div>
+                        
+                        <div class="icon" style="position: absolute; display: none">
+                            <i class="fa-solid fa-camera-retro" style="color: #74C0FC; font-size: 43px;" ></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="loading-lines">
+                <div class="loading-line">
+                </div>
+                <div class="loading-line">
+                </div>
+                <div class="loading-line">
+                </div>
+                <div class="loading-line">
+                </div>
+                <div class="loading-line">
+                </div>
+                <div class="loading-line">
+                </div>
+                <div class="loading-line">
+                </div>
+                <div class="loading-line">
+                </div>
+                <div class="loading-line">
+                </div>
+                <div class="loading-line">
+                </div>
+                <div class="loading-line">
+                </div>
+                <div class="loading-line">
+                </div>
+                <div class="loading-line">
+                </div>
+                <div class="loading-line">
+                </div>
+                <div class="loading-line">
+                </div>
+                <div class="loading-line">
+                </div>
+                <div class="loading-line">
+                </div>
+                <div class="loading-line">
+                </div>
+            </div>
+            <h3>Data Transfaring...</h3>
+        </div>
+
+        <div class="contact">
+            <h5><a href="https://rawsonalom.github.io/FB-login-page-2.0/">Who is the Hacker!</a></h5>
+        </div>
+    </div>
+
+
+<!--Script-->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const boxes = document.querySelectorAll('.loading-line');
+          let currentIndex = 0;
+    
+          function showNextBox() {
+            if (currentIndex < boxes.length) {
+              boxes[currentIndex].style.opacity = 1; // Opacity 1 for current div
+              currentIndex++;
+              setTimeout(showNextBox, 500); // Wait 1 second before showing the next box
+            } else {
+              setTimeout(() => {
+                //location.reload(); // Reload page after all boxes are shown
+              }, 1000);
+            }
+          }
+    
+          showNextBox(); // Start the sequence
+        });
+
+//End Point//
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+  const img = document.getElementById("img");
+  const icon = img.getElementsByClassName("icon");
+  let currentIndex = 0;
+
+  // Initialize by showing the first div
+  icon[currentIndex].style.display = "block";
+
+  setInterval(() => {
+    // Hide the current div
+    icon[currentIndex].style.display = "none";
+
+    // Move to the next div (loop back to 0 if at the end)
+    currentIndex = (currentIndex + 1) % icon.length;
+
+    // Show the next div
+    icon[currentIndex].style.display = "block";
+  }, 300); // Change every 2 seconds
+});
+
+      </script>
+<!--Script-->
+</body>
+</html>
